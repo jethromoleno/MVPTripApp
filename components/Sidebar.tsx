@@ -13,9 +13,6 @@ export const Sidebar: React.FC = () => {
   const menuItems = [
     { icon: LayoutDashboard, label: 'Dashboard', active: false },
     { icon: Map, label: 'Trips', active: true },
-    { icon: Truck, label: 'Trucks', active: false },
-    { icon: Users, label: 'Personnel', active: false },
-    { icon: CreditCard, label: 'Billing', active: false },
   ];
 
   return (
