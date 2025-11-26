@@ -1,0 +1,8 @@
+#Django and Django REST Framework for the backend:
+
+Django==5.0.*
+djangorestframework==3.15.*
+
+#PostgreSQL adapter for Python:
+
+psycopg2-binary==2.9.*
