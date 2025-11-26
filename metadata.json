@@ -1,0 +1,5 @@
+{
+  "name": "FleetFlow FMS",
+  "description": "A dark-mode Fleet Management System MVP focusing on trip scheduling and resource availability.",
+  "requestFramePermissions": []
+}
