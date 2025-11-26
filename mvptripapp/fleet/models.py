@@ -77,6 +77,12 @@ class Employee(models.Model):
         default='Available'
     )
     license_number = models.CharField(max_length=50, blank=True, null=True)
+    weekly_hours_current = models.DecimalField(
+        max_digits=5,
+        decimal_places=2,
+        default=0.0,
+        help_text="Current hours worked this week for payroll/management tracking."
+    )
     rating = models.DecimalField(
         max_digits=2,
         decimal_places=1,
