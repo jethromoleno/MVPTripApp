@@ -8,11 +8,6 @@ from .models import (
 # MASTER DATA SERIALIZERS
 # ====================================================================
 
-class EmployeeSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Employee
-        fields = '__all__'
-
 class CustomerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Customer
@@ -21,12 +16,17 @@ class CustomerSerializer(serializers.ModelSerializer):
 class LocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Location
-        fields = '__all__'
+        fields = ['location_id', 'name', 'city', 'address_line_1'] # Include all necessary fields
+
+class EmployeeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Employee
+        fields = ['employee_id', 'first_name', 'last_name', 'role', 'rating']
 
 class TruckSerializer(serializers.ModelSerializer):
     class Meta:
         model = Truck
-        fields = '__all__'
+        fields = ['truck_id', 'license_plate', 'tonner_capacity']
 
 # ====================================================================
 # TRIP & TRANSACTION SERIALIZERS
